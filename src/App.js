@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Formulario from "./components/Formulario";
+import TablaProducto from "./components/TablaProducto";
+import Grid from "@mui/material/Grid";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      direction="column"
+    >
+      <Grid item lg={12}>
+        <Formulario />
+      </Grid>
+      <Grid item lg={12}>
+        <TablaProducto />
+      </Grid>
+    </Grid>
   );
 }
 
