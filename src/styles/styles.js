@@ -1,5 +1,6 @@
 export const textFieldStyles = {
   margin: "24px",
+  backgroundColor: "#F5F5F5",
 };
 export const buttonStyles = {
   margin: "34px",
